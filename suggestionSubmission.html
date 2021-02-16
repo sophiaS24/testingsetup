@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit a Suggestion</title>
+    <link rel="stylesheet" href="style.css" />
+    	<script type="text/javascript" src="suggestionSubmission.js"></script>
+  </head>
+  <body>
+  <div class="submission-content">
+    <h2 class="submission-title">Submit a Suggestion</h2>
+
+  <div class="submission">
+      <form id="suggestionForm" onsubmit="acknowledgement()">
+        <div class="submission-name">
+          <textarea type="text" placeholder="Enter your Name" id="name"></textarea>
+        </div>
+        <div class="submission-suggest">
+          <textarea  type="text" placeholder="Enter your Suggestion" id="suggestion"></textarea>
+        </div>
+        <div class="submission-tags">
+          <textarea  type="text" placeholder="Enter Key Words" id="tags"></textarea>
+        </div>
+        <label for="status">Post Status</label>
+        <select name="status" id="status">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+        <hr>
+        <div class="submitButton">
+        <input type="Submit">
+        </div>
+      </form>
+
+  	<script type="text/javascript" src="suggestionSubmission.js"></script>
+    </div>
+  </div>
+    </body>
+</html>

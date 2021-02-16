@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Create Account</title>
+    <style>
+
+      body{
+        background-color: cornsilk;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1{
+        text-align:center;
+      }
+      
+      .container{
+        display:flex;
+        justify-content:center;
+        text-align: left;
+        font-size: 150%;
+      }
+
+      input{
+        width: 100%
+      }
+
+      input[type=text]{
+        border: 2px solid black;
+      }
+
+      input[type=button]{
+        background-color: white;
+        width: 50%;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <h1>Create an Account</h1>
+
+    <div class ="container">
+      <form action="/action_page.php">
+        <div class = "formInfo">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email"><br><br>
+          <label for="pass">Password:</label>
+          <input type="text" id="pass" name="pass"><br><br>
+          <label for="orgId">Organization ID:</label>
+          <input type="text" id="orgId" name="orgId"><br><br>
+          <input type="button" value="Create Account" onclick="createAcct()">
+          <input type="button" value="Log In">
+        </div>
+      </form>
+    </div>
+    
+  </body>
+</html>

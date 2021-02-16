@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Suggestions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+
+
+  <div class="suggestions-content">
+  <h2 class="head">Suggestions</h2>
+
+<br>
+  <div class="suggestion">
+  <br><br>
+    <div class="suggestionPost">
+      <h2> Example of a suggestion #1 <h2>
+    </div>
+  </div>
+  <div class="main">
+    <div class="header"></div>
+      <div class="sprite upvote"></div>      <div class="sprite downvote"></div>
+    <br><br>
+        <textarea></textarea>
+      <br><br>
+        <button onclick="submitComment()" >Add comment</button>
+    </div>
+  <br><br><br> <hr><br><br><br>
+
+
+  <div class="suggestion">
+  <br><br>
+    <div class="suggestionPost">
+      <h2> Example of a suggestion #2 <h2>
+    </div>
+  </div>
+  <div class="main">
+    <div class="header"></div>
+      <div class="sprite upvote"></div>      <div class="sprite downvote"></div>
+    <br><br>
+        <textarea></textarea>
+      <br><br>
+        <button onclick="submitComment()" >Add comment</button>
+    </div>
+  <br><br><br> <hr><br><br><br>
+
+
+
+ </div>
+
+
+<script> 
+function submitComment() {
+    alert("The comment was submitted");
+}
+for (const btn of document.querySelectorAll('.upvote')) {
+  btn.addEventListener('click', event => {
+    event.currentTarget.classList.toggle('on');
+  });
+}
+for (const btn of document.querySelectorAll('.downvote')) {
+  btn.addEventListener('click', event => {
+    event.currentTarget.classList.toggle('on');
+  });
+}
+</script>
+  </body>
+</html>

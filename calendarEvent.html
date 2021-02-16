@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="calendarEvent.css" />
+    <script defer src="calendarEvent.js"></script>
+    <script defer src="CreatePop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <button class="createPopup btn success loc" data-modal="modalTwo">Create Event</button> 
+    </div>
+    <div id="modalTwo" class="modal">
+        <div class="modal-content">
+          <div class="contact-form">
+            <span id="cls" class="close">&times;</span>
+            <!-- form -->
+            <form onsubmit="return false;">
+                <h2>Create Event</h2>
+                <div>
+                  <input id="form-title" type="text" name="title" placeholder="Title" required>
+                </div>
+                <div>
+                    <input id="datepicker" type="date" placeholder="pick a date" required>
+                </div>
+                <span>Description</span>
+                <div>
+                  <textarea id="form-description" rows="4" required></textarea>
+                </div>
+                <button class="create btn success" onclick="addMyEvent()"  type="submit">Create</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    <div class="calendar-content"> 
+    </div>  
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Submit a Poll</title>
+	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="user-scalable=no" , width="device-width" />
+	<script type="text/javascript" src="pollSubmission.js"></script>
+
+</head>
+
+<body>
+	<div class="submission-content" id="sub-content">
+		<h2 class="submission-title">Submit a Poll</h2>
+
+		<div class="newPoll">
+			<form id="pollForm" method="POST" onsubmit="acknowledgement()">
+				<div class="pollName">
+					<textarea type="text" placeholder="Enter your Poll's Name" id="pollname" name="name"></textarea>
+        </div>
+        <div class="pollDesc">
+          <textarea  type="text" placeholder="Enter a poll description" id="pollDescription" name="desc"></textarea>
+        </div>
+        <div class="poll-box">
+          <textarea  type="text" placeholder="Enter Poll Answer 1" id="a1" name="a1"></textarea>
+        </div>
+        <div class="poll-box">
+          <textarea  type="text" placeholder="Enter Poll Answer 2" id="a2" name="a2"></textarea>
+        </div>  
+        <div class="poll-box">
+          <textarea  type="text" placeholder="Enter Poll Answer 3" id="a3" name="a3"></textarea>
+        </div>  
+        <div class="poll-box">
+          <textarea  type="text" placeholder="Enter Poll Answer 4" id="a4" name="a4"></textarea>
+        </div>  
+        <div class="submitButton">
+        <input type="submit">
+        <input type="button" value="Submit test" onclick="acknowledgement()">
+        </div>
+      </form>
+
+      <table class="pollTable">
+
+      </table>
+    </div>
+  </div>
+  <div class="submission-content" id="addToMe"> 
+    <h2 class="createdPolls">Created Polls</h2>
+  </div>
+    </body>
+</html>
